@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const flavorValues = ['1', '2', '3'] as const;
+export const flavorValues = ['cc', 'mcc', 'rr'] as const;
 
 export type Flavor = (typeof flavorValues)[number];
 
@@ -8,15 +8,15 @@ export type FlavorOption = { value: Flavor; label: string };
 
 export const flavors: FlavorOption[] = [
 	{
-		value: '1',
+		value: 'cc',
 		label: 'Cookies and cream'
 	},
 	{
-		value: '2',
+		value: 'mcc',
 		label: 'Mint choc chip'
 	},
 	{
-		value: '3',
+		value: 'rr',
 		label: 'Raspberry ripple'
 	}
 ];
